@@ -1,0 +1,113 @@
+#main-page{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-list{
+    margin-top: 30px;
+    width: 100vw;
+    height: 60vh;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 0.1px solid #524e4e93;
+}
+th{
+    height: 7.5vh ;
+}
+td{
+    height: 5vh;
+}
+
+#field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.button-list-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.5px;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+.button-list-page:hover{
+    cursor:pointer;
+    background-color: #c3c3c3a9;
+}
+
+.input-search{
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color:#c3c3c3d2;
+    color: #000000a9;
+}
+
+.input-search:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#input-div{
+    width: 25%;
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#button-div{
+    width: 25%;
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 700px){
+
+    #field{
+        display: inline-block;
+        height: 50%;
+        width: 100%;
+    }
+    #input-div, #button-div{
+      width: 90%;
+      height: 45%;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    .button-list-page{
+        margin-right: 0;
+    }
+    .email-column{
+        display: none;
+    }
+    table{
+        font-size: 0.8rem;
+    }
+
+  }

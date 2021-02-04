@@ -1,0 +1,108 @@
+#form-page{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-reg-page{
+    border-radius: 7px;
+    border: solid 0.5px;
+    width: 49%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    margin-left:90px;
+}
+
+.field{
+    width: 100vw;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }  
+
+label{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    background-color: #000111;
+    color: #c3c3c3;
+}
+
+.field-buttom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 10%;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.button-reg-page:hover{
+    cursor:pointer;
+    background-color: #c3c3c3a9;
+}
+
+.input-reg{
+    text-decoration: none;
+    border: none;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+    background-color:#c3c3c3d2;
+    color: #000000a9;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+@media screen and (max-width: 700px){
+    .field{
+        font-size: 62.5%;
+    }
+    label{
+        width: 20%;
+    }
+    .input-reg{
+        width: 70%
+    }
+    .button{
+        width: 80%;
+    }
+}
+
+#alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vh;
+}
+
+.singUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-decoration: underline;
+}
