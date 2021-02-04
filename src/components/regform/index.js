@@ -71,8 +71,8 @@ async function handleFormSubmit(event){
   </div>
   <div className='field-buttom'>
   <div className="button">
-    <button className='button-reg-page'><Link to='/'>Cancelar</Link></button>
-    <button type='submit' onClick={handleFormSubmit} className='button-reg-page'>Salvar</button>
+    <button className='button-reg-page'><Link to='/'>Voltar</Link></button>
+    <button type='submit' onClick={()=>alert('cadastrado com sucesso')} className='button-reg-page'>Salvar</button>
   </div>
   </div>
   </form>

@@ -44,7 +44,7 @@ function handleFormSubmit(event){
   </div>
   <div className='field-buttom'>
   <div className="button">
-    <button className='button-reg-page' type='submit' onClick={handleFormSubmit} >Entrar</button>
+    <Link className='button-reg-page' to='list'>Entrar</Link>
   </div>
   </div>
   <Link className='singUp' to='/register'>Não tem conta? Cadastre-se!</Link>

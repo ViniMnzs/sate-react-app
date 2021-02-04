@@ -13,11 +13,11 @@ export default function Routes() {
     return (
       <BrowserRouter>
         <Route exact path="/" component={Login} />
-        <Route exact path="/list/:id" component={Main} />
+        <Route exact path="/list" component={Main} />
         <Route exact path="/admin" component={Admin} />
         <Route exact path="/process" component={Process} />
         <Route exatc path='/register' component={Register} />
-        <Route exatc path='/map/:id' component={Mapa} />
+        <Route exatc path='/map' component={Mapa} />
         <Route path="/remove/:id" exact component={DeleteStudent} />
         <Route path="/update/:id" exact component={UpdateStudent} />
 

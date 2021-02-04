@@ -32,7 +32,7 @@ function handleFormSubmit(event){
     return(
   <div id="form-page">
   <form onSubmit={handleFormSubmit}>
-  <Link style={{marginBottom:'100px', height:'5vh'}} to='/admin'>Painel do Administrador</Link>
+  <Link style={{marginBottom:'100px', height:'5vh'}} to='/'>Voltar</Link>
   <div className="field">
     <label>Login</label>
     <input name='login' maxLength={5} className='input-reg' required type='text' onChange={handleInputChange}/>
@@ -43,7 +43,7 @@ function handleFormSubmit(event){
   </div>
   <div className='field-buttom'>
   <div className="button">
-    <button type='submit' onClick={handleFormSubmit} className='button-reg-page'>Entrar</button>
+    <Link to='/process' className='button-reg-page'>Entrar</Link>
   </div>
   </div>
   </form>

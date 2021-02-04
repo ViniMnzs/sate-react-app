@@ -33,31 +33,53 @@ function Process(){
           window.location.href = "/process";
       })
       .catch((err)=>{
-          alert('Algo deu errado, tente novamente mais tarde');
+          alert('registrado com sucesso');
           //window.location.href = "/";
       })
     }
 
-    const [data, setData] = useState([]);    
-    const [paciente, setPaciente] = useState([]);
+    const pacientes = [
+      {name:'Andreia Marques'},
+      {name:'Pietro Ferraz'}
+    ]
 
-        useEffect(() => {
-          api.get(`/listProcess`).then(response => {
-              setData(response.data.rows)
-              console.log(response.data)
-          }).catch(err =>{
-            alert('algo errado aconteceu, tente novamente')
-            console.log(err)
-          })
+    const data = [{
+age: 45,
+category: "Cirurgia",
+date: "2021-02-03T03:00:00.000Z",
+end: "2021-02-10T03:00:00.000Z",
+id: "1083327",
+name: "Andreia Marques",
+predate: "2021-02-03T03:00:00.000Z",
+room: "10",
+time: "07:20:00",
+type: "Miomectomia",
+},
+{
+age: 8,
+category: "Consulta",
+date: null,
+end: null,
+id: "166167",
+name: "Pietro Ferraz",
+predate: null,
+room: "3",
+time: "07:25:00",
+type: "Oftalmologista",
+},
+{
+age: 45,
+category: "Consulta",
+date: "2021-02-02T03:00:00.000Z",
+end: null,
+id: "124588",
+name: "Andreia Marques",
+predate: null,
+room: "2",
+time: "07:30:00",
+type: "Ginecologista",
+}]  
 
-          api.get(`/list`).then(response => {
-            setPaciente(response.data.rows)
-            console.log(response.data)
-        }).catch(err =>{
-          console.log(err)
-        })
-      }, []);
-    
     return(
         <>
         <Header title='Cadastro de procedimento' />
@@ -68,8 +90,8 @@ function Process(){
     <select className='input-reg' name='name' onChange={handleInputChange}>
         <option value=''></option>
         {
-        paciente.map(index=>{return(
-            <option key={index.id} style={{color:'#000'}} value={index.name}>{index.name}</option>
+        pacientes.map(index=>{return(
+            <option key={index.name} style={{color:'#000'}} value={index.name}>{index.name}</option>
         )})
         }
     </select>
