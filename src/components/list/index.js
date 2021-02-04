@@ -44,7 +44,7 @@ useEffect(() => {
       <td width='10%' data-label='Tipo'>{entry.type}</td>
       <td width='15%' data-label='Data'>{moment(entry.date).format("DD/MM/YYYY")}</td>
       <td width='10%' data-label='Hora'>{entry.time}</td>
-      <td width='10%' data-label='Data da alta'>{moment(entry.end).format("DD/MM/YYYY")}</td>
+      <td width='10%' data-label='Data da alta'>{entry.end ? moment(entry.end).format("DD/MM/YYYY") : '-'}</td>
       <td width='10%' data-label='Sala'>{entry.room}</td>
     </tr>
   )))}

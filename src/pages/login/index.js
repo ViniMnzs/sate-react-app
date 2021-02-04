@@ -21,7 +21,7 @@ function handleFormSubmit(event){
   api.post('/login', fields)
   .then((response)=>{
     alert('Logado com sucesso')
-    window.location.href = `/list/${response.data.data.rows[0].name}`;
+    window.location.href = `/list/Andreia Marques`;
   })
   .catch((err)=>{
       alert(err);
